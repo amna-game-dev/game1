@@ -1,29 +1,34 @@
-
 #homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen */
+    background: linear-gradient(to bottom right, #f0f8ff, #c2e9fb); /* optional background */
     text-align: center;
-    margin-top: 100px;
 }
 
 #homePage h1 {
-    font-size: 50px;
+    font-size: 60px; /* Bigger title */
+    font-weight: bold;
     color: darkblue;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #homePage button {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 15px 40px;
+    font-size: 24px; /* Bigger button text */
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #homePage button:hover {
     background-color: #45a049;
 }
-
 
 
 body {
