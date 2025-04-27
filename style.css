@@ -5,95 +5,43 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-#homePage {
+/* Home Screen Styling */
+#homeScreen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f0f8ff;
     text-align: center;
-    background-color: #f0f8ff; /* optional */
 }
 
-#homePage h1 {
+#homeScreen h1 {
     font-size: 60px;
-    font-weight: bold;
-    color: darkblue;
     margin-bottom: 30px;
 }
 
-#homePage button {
-    padding: 15px 40px;
+#homeScreen button {
+    padding: 15px 30px;
     font-size: 24px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-#homePage button:hover {
-    background-color: #45a049;
-}
-
-#gamePage {
-    padding: 20px;
+/* Questions Screen Styling */
+#questionsScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff8dc;
     text-align: center;
 }
 
-body {
-    background-image: url('assets/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-#scoreboard {
-    margin: 10px;
-    font-size: 20px;
-    text-align: center; /* Center the text */
-}
-
-#turnBanner {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center; /* Center the turn banner too */
-}
-
-#board {
-    display: grid;
-    grid-template-columns: repeat(6, 100px);
-    gap: 10px;
-    justify-content: center;
-}
-
-#board button {
-    height: 80px;
-    font-size: 18px;
-}
-
-#questionContainer {
-    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 50px auto;
-}
-
-
-
-#timer {
-    font-size: 30px;
-    color: red;
-    margin-bottom: 10px;
-}
-
-#options button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 18px;
+#questionsScreen h1 {
+    font-size: 50px;
 }
