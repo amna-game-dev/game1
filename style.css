@@ -27,8 +27,14 @@ body {
 }
 
 #questionContainer {
-    margin-top: 20px;
+    background-image: url('assets/background.png');
+    background-size: cover;          /* <-- This makes it stretch nicely */
+    background-position: center;     /* Center it properly */
+    background-repeat: no-repeat;    /* No repeating tiles */
+    padding: 20px;                   /* Optional: nice spacing */
+    border-radius: 10px;              /* Optional: rounded corners */
 }
+
 
 #timer {
     font-size: 30px;
