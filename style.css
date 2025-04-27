@@ -1,8 +1,13 @@
 body {
+    background-image: url('assets/background.png'); /* use your correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full height */
+    margin: 0; /* Remove default browser margin */
     font-family: Arial, sans-serif;
-    text-align: center;
-    background: #f0f8ff;
 }
+
 
 #scoreboard {
     margin: 10px;
@@ -27,13 +32,13 @@ body {
 }
 
 #questionContainer {
-    background-image: url('assets/background.png');
-    background-size: cover;          /* <-- This makes it stretch nicely */
-    background-position: center;     /* Center it properly */
-    background-repeat: no-repeat;    /* No repeating tiles */
-    padding: 20px;                   /* Optional: nice spacing */
-    border-radius: 10px;              /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
 }
+
 
 
 #timer {
