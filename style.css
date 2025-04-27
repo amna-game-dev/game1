@@ -4,16 +4,15 @@ html, body {
     padding: 0;
 }
 
-
 #homePage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full screen height */
-    background-color: #f0f8ff; /* optional */
+    min-height: 100vh;
     text-align: center;
 }
+
 
 #homePage h1 {
     font-size: 60px;
