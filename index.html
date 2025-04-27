@@ -1,36 +1,23 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family Trivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<!-- Home Page -->
-<div id="homePage">
+<!-- HOME SCREEN -->
+<div id="homeScreen">
     <h1>Family Trivia</h1>
-    <button onclick="startGame()">Start Game</button>
+    <button onclick="goToQuestions()">Start</button>
 </div>
 
-
-<!-- Game Page -->
-<div id="gamePage" style="display: none;">
-    <div id="scoreboard">
-        <span id="team1">Team 1: 0</span>
-        <span id="team2">Team 2: 0</span>
-    </div>
-
-    <div id="turnBanner">Team 1's Turn</div>
-
-    <div id="board">
-        <!-- 30 buttons dynamically generated -->
-    </div>
-
-    <div id="questionContainer" style="display: none;">
-        <div id="timer">60</div>
-        <h2 id="questionCategory"></h2>
-        <h3 id="questionText"></h3>
-        <div id="options"></div>
-        <button onclick="goBack()">Back to Board</button>
-    </div>
+<!-- QUESTIONS SCREEN -->
+<div id="questionsScreen" style="display: none;">
+    <h1>Questions</h1>
 </div>
 
 <script src="script.js"></script>
 </body>
-
 </html>
