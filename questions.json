@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Guess the Logo",
+    "question": "Which company's logo is a bitten apple?",
+    "options": ["Samsung", "Apple", "Microsoft", "Google"],
+    "answer": "Apple",
+    "points": 100
+  },
+  {
+    "category": "Guess the Logo",
+    "question": "Which fast-food chain has a red-haired girl as its logo?",
+    "options": ["McDonald's", "KFC", "Wendy's", "Burger King"],
+    "answer": "Wendy's",
+    "points": 200
+  },
+  {
+    "category": "Guess the Flag",
+    "question": "Which country has a red flag with a white cross?",
+    "options": ["Switzerland", "Denmark", "England", "Norway"],
+    "answer": "Switzerland",
+    "points": 100
+  },
+  {
+    "category": "Guess the Country's Capital",
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+    "answer": "Canberra",
+    "points": 100
+  },
+  {
+    "category": "Guess the Phrase from Emojis",
+    "question": "🧈🍞",
+    "options": ["Spread Love", "Butter Bread", "Toast Time", "Snack Attack"],
+    "answer": "Butter Bread",
+    "points": 100
+  },
+  {
+    "category": "Guess the Song",
+    "question": "Which song has the lyrics 'Is this the real life? Is this just fantasy?'",
+    "options": ["Bohemian Rhapsody", "Hotel California", "Imagine", "Hey Jude"],
+    "answer": "Bohemian Rhapsody",
+    "points": 100
+  }
+]
