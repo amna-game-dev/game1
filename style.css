@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+}
+
+#scoreboard {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#turnBanner {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+#board button {
+    height: 80px;
+    font-size: 18px;
+}
+
+#questionContainer {
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+#options button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+}
