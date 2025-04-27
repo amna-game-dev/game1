@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen */
-    background: linear-gradient(to bottom right, #f0f8ff, #c2e9fb); /* optional background */
+    min-height: 100vh; /* Full screen height */
+    background-color: #f0f8ff; /* optional */
     text-align: center;
 }
 
 #homePage h1 {
-    font-size: 60px; /* Bigger title */
+    font-size: 60px;
     font-weight: bold;
     color: darkblue;
     margin-bottom: 30px;
@@ -17,7 +17,7 @@
 
 #homePage button {
     padding: 15px 40px;
-    font-size: 24px; /* Bigger button text */
+    font-size: 24px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -29,7 +29,6 @@
 #homePage button:hover {
     background-color: #45a049;
 }
-
 
 body {
     background-image: url('assets/background.png'); /* use your correct path */
