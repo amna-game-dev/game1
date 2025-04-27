@@ -5,6 +5,12 @@ let questions = [];
 let timer;
 let timeLeft = 60;
 
+function startGame() {
+    document.getElementById('homePage').style.display = 'none';
+    document.getElementById('gamePage').style.display = 'block';
+}
+
+
 // Fetch questions
 fetch('questions.json')
     .then(response => response.json())
