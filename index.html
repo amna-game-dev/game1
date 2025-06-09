@@ -1,36 +1,84 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>فَكِّرْ - لعبة</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PlayZone</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+<script src="script.js"></script>
+
 <body>
-<div id="homeScreen">
-    <img id="logo" src="assets/cropped-logo.png" alt="Logo">
-    <div id="mainContainer">
-        <div class="field">
-            <label for="gameName">اسم اللعبة</label>
-            <input type="text" id="gameName">
+
+<header>
+    <div class="logo">
+        <img src="assets/img.png" alt="فكّر Logo" />
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">Leaderboard</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="categories">
+    <h2>Choose a Category</h2>
+    <div class="category-grid">
+        <div class="category-card" onclick="startGame('movies')">
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2017/03/Disney-Castle-Logo.jpg" alt="Disney Movies" />
+            <h3>Disney Movies</h3>
         </div>
-        <div id="teamsContainer">
-            <div class="field">
-                <label for="team1">اسم الفريق الأول</label>
-                <input type="text" id="team1">
-            </div>
-            <div class="field">
-                <label for="team2">اسم الفريق الثاني</label>
-                <input type="text" id="team2">
-            </div>
+        <div class="category-card" onclick="startGame('characters')">
+            <img src="https://www.usatoday.com/gcdn/presto/2020/03/19/USAT/fb1f3ba4-c628-4004-a013-7574327bc792-XXX_IMG_RALPH_PRINCESS_SELFI_1_1_QCNDPPC6.JPG" alt="Disney Characters" />
+            <h3>Disney Characters</h3>
+        </div>
+        <div class="category-card" onclick="startGame('shows')">
+            <img src="https://images.squarespace-cdn.com/content/v1/56fb3615f8508278fbc2a7a9/1464094159392-0L1BT12BU6B9XY5ZRTRU/image-asset.jpeg" alt="Marvel" />
+            <h3>Marvel Movies</h3>
         </div>
     </div>
-</div>
 
-<!-- QUESTIONS SCREEN -->
-<div id="questionsScreen" style="display: none;">
-    <h1>الأسئلة</h1>
-</div>
 
-<script src="script.js"></script>
+</section>
+
+
+
+<footer>
+    <p>© All rights reserved</p>
+</footer>
+
+<!-- Include the QR Code library -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+<script>
+    async function startGame(category) {
+        const response = await fetch('questions.json');
+        const data = await response.json();
+        const items = data[category];
+
+        const randomItem = items[Math.floor(Math.random() * items.length)];
+        const url = randomItem.link;
+
+        let container = document.getElementById("qr-container");
+        if (!container) {
+            container = document.createElement("div");
+            container.id = "qr-container";
+            container.style.marginTop = "40px";
+            container.style.textAlign = "center";
+            document.body.appendChild(container);
+        }
+
+        container.innerHTML = `<h2>Scan to see your card 🎬</h2><canvas id="qr"></canvas>`;
+
+        QRCode.toCanvas(document.getElementById("qr"), url, function (error) {
+            if (error) console.error("QR Error:", error);
+        });
+    }
+
+</script>
+
 </body>
 </html>
