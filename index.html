@@ -73,9 +73,11 @@
 
         container.innerHTML = `<h2>Scan to see your card 🎬</h2><canvas id="qr"></canvas>`;
 
-        QRCode.toCanvas(document.getElementById("qr"), randomItem.link, function (error) {
+        console.log("Generating QR for URL:", url);
+        QRCode.toCanvas(document.getElementById("qr"), url, function (error) {
             if (error) console.error("QR Error:", error);
         });
+
 
     }
 
